@@ -8,12 +8,15 @@ class Insulter
     "Your mum's face is" 
   ] 
   FALLBACK = "That's what she said"
+  EMPTY_RESPONSE = "Bring it on!"
 
   def initialize 
     @tagger = EngTagger.new
   end
 
   def insult_with(string)
+    return EMPTY_RESPONSE if string.nil? || string.empty? || string =~ /^\s*$/ #just whitespace
+
     # Try and match against the beginning of the string. If so, get the next beginning from the array
     regexp = Regexp.new(%{^(?<start>#{INSULT_BEGINNINGS.join("|")}) (?<article>an|a) (?<thing>.*)})
     if matches = string.capitalize.match(regexp)

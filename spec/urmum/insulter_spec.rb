@@ -44,6 +44,19 @@ describe "Insulter" do
     it "should treat 'ur' the same as 'you're' and your"
     it "should handle mum's the same as mum is"
 
+    context "when passed empty input" do
+      subject { insulter.insult_with("") }
+      it { should == "Bring it on!" }
+    end
+    context "when passed blank input" do
+      subject { insulter.insult_with("\t  ") }
+      it { should == "Bring it on!" }
+    end
+    context "when passed nil input" do
+      subject { insulter.insult_with nil }
+      it { should == "Bring it on!" }
+    end
+
     context "when passed a single word" do
       context "which is a noun" do
         subject { insulter.insult_with("thing") }
