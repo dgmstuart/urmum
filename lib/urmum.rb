@@ -1,5 +1,5 @@
 require "urmum/version"
+require "urmum/insulter"
 
 module Urmum
-  # Your code goes here...
 end
