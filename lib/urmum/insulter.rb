@@ -1,5 +1,4 @@
 require 'engtagger'
-require 'pry'
 
 class Insulter
   INSULT_BEGINNINGS = [
@@ -35,6 +34,5 @@ class Insulter
       "You're a #{thing}"
     end
 
-# binding.pry
   end
 end
