@@ -1,6 +1,9 @@
 # Urmum
 
-TODO: Write a gem description
+A gem which responds to text with insults according to the "You're a/Your mum's a" meme - 
+not to be confused with the "Yo mamma" meme which is a different thing entirely.
+
+A demo can be found at https://urmum.herokuapp.com/
 
 ## Installation
 
@@ -18,7 +21,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+On the command line:
+
+    urmum [Some text]
+   
+In your ruby code:
+
+    require 'urmum'
+    Insulter.new.insult_with("Your mum is a fish")
+   
+The gem responds to insults about itself, it's face, it's mum or it's mum's face,
+but also responds to any string you care to throw at it
 
 ## Contributing
 
