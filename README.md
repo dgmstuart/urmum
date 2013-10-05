@@ -1,6 +1,8 @@
 # Urmum
-
 [![Gem Version](https://badge.fury.io/rb/urmum.png)](http://badge.fury.io/rb/urmum)
+[![Dependency Status](https://gemnasium.com/dgmstuart/urmum.png)](https://gemnasium.com/dgmstuart/urmum)
+
+
 A gem which responds to text with insults according to the "You're a/Your mum's a" meme - 
 not to be confused with the "Yo mamma" meme which is a different thing entirely.
 
